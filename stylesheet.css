@@ -1,0 +1,96 @@
+#header {
+    background-color: #800000;
+    padding: 5px;
+    color: white;
+    font-size:30px;
+    font-family:'Castellar';
+}
+label{
+    font-family:'Goudy Old Style';
+}
+#prodTable {
+    border-width: 3px;
+    border-color: #7b68ee;
+    padding:0px;
+    font-family:'Goudy Old Style';
+    font-size: 35px;
+}
+#disTable {
+    text-align: left;
+    font-size:35px;
+    font-family:'Goudy Old Style';
+}
+#OutputTable
+{
+    background-color:#7b68ee;
+    color:white;
+}
+#vertical {
+    border-left: 3px solid #800000;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    text-align: right;
+}
+/* Makes Changes in the odd and even row entries */
+tr:nth-child(even) {
+    background-color:#fff0f5;
+    padding: 0 0 0 0;
+    font-size: 15px
+}
+tr:nth-child(odd) {
+    padding: 0 0 0 0;
+    font-size:13px;
+}
+#image {
+    width: 150px;
+}
+#newData {
+    border-color:#7b68ee;
+}
+/* Fade in Animation for when a student is enrolled */
+.animated {
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+/* Color of the error message */
+#errorMsg{
+    color:red;
+}
+/* * {
+    outline: none;
+} */
+
+.msg{
+    display: inline-block;
+}
+.email-field:focus:invalid + .msg::after {
+    color: red;
+    content: "Invalid email address";
+}
